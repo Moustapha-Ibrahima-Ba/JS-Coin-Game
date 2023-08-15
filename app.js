@@ -1,3 +1,4 @@
+// Initial function
 function isTouching(a, b) {
 	const aRect = a.getBoundingClientRect();
 	const bRect = b.getBoundingClientRect();
@@ -10,6 +11,7 @@ function isTouching(a, b) {
 	);
 }
 
+// Our function
 const init = () => {
 	const avatar = document.querySelector('#player');
 	const coin = document.querySelector('#coin');
@@ -33,6 +35,7 @@ const init = () => {
 	});
 };
 
+// Functions to use into our main function
 const moveVertical = (element, amount) => {
 	const currTop = extractPos(element.style.top);
 	element.style.top = `${currTop + amount}px`;
